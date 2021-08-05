@@ -1,0 +1,21 @@
+Le code est répartit dans sources(.cpp) et dans headers(.h). Les fichiers d'entrée sont dans data. La sortie est dans le terminal avec potentiellement un affichage graphique.
+
+Le main est dans demo.cpp
+
+Le fichier setting est important, il donne toutes les informations d'entrée au programme (principalement de la metadata), les options possibles sont ci-dessous
+
+_______________________________________________________________________________________________
+
+settings :
+/!\ Les items doivent être séparés par ':', il ne faut pas rajouter d'espaces.
+Voici les différents item possibles : les différentes possibilités de réponse sont entre parenthèses
+
+draw:(0,1,2) // pour afficher la triangulation jamais, au début et à la fin, à chaque étape
+input:(triangles,insertion) // pour choisir comment la triangulation est définie
+twists : ([entier positif ≥ 0 ],-1) // pour définir un nombre de twists appliqués à la triangulation (dans une seule direction), -1 envoie chercher dans un programme data/twist.cin
+file_points:([nom de fichier ex : data/points.cin ]  // pour définir les points d'entrée
+file_faces :([nom de fichier ex : data/faces.cin   ]) // pour définir les faces (si input=triangles)
+file_period:([nom de fichier ex : data/period.cin ]) // pour définir la période
+output:(0,1) // pour choisir si la sortie est enregistrée dans [file_output]
+file_output:([nom de fichier ex : resultats/output.cin]) // pour choisir le fichier d'output
+draw_period_num:([entier positif ≥ 1) // pou choisir combien de périodes sont affichées (si draw>0)

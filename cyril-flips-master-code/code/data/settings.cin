@@ -1,0 +1,11 @@
+draw:0
+input:insertion
+twists:data/twist.cin
+file_points:data/5000_random_points.cin
+file_faces:data/faces_simple.cin
+file_period:data/period_1.cin
+is_vertex_limit:1
+vertex_limit:data/vertex_limit.cin
+output:1
+file_output:resultats/output.cin
+draw_period_num:1
